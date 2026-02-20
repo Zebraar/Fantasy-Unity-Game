@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 03a0868a17e422548ade3f13a833e12d
+timeCreated: 1495236870
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - tex: {fileID: 2800000, guid: 284e98c880021944b970cf88b6cfbed5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98640
+  packageName: Simple Dialogues
+  packageVersion: 1.2
+  assetPath: Assets/SimpleDialogues/Scripts/Editor/DialogueSystem.cs
+  uploadId: 459821

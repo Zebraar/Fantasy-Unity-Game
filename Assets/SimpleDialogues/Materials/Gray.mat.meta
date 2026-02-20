@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a1ef7a38ccd32ce43af1fad9b1190985
+timeCreated: 1503537407
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98640
+  packageName: Simple Dialogues
+  packageVersion: 1.2
+  assetPath: Assets/SimpleDialogues/Materials/Gray.mat
+  uploadId: 459821
