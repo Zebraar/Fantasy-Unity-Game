@@ -939,7 +939,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049437413}
         m_TargetAssemblyTypeName: NewDialogueSystem, Assembly-CSharp
         m_MethodName: AdvanceDialogue
         m_Mode: 1
@@ -2399,6 +2399,7 @@ GameObject:
   - component: {fileID: 338172341}
   - component: {fileID: 338172340}
   - component: {fileID: 338172344}
+  - component: {fileID: 338172345}
   m_Layer: 0
   m_Name: Karl
   m_TagString: Untagged
@@ -2582,6 +2583,19 @@ MonoBehaviour:
   CurrentSet: 0
   TabList:
   - KarlDef
+--- !u!114 &338172345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338172338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
+  dialogueSystem: {fileID: 2049437413}
 --- !u!1001 &347622057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3012,6 +3026,8 @@ GameObject:
   - component: {fileID: 476302277}
   - component: {fileID: 476302276}
   - component: {fileID: 476302275}
+  - component: {fileID: 476302280}
+  - component: {fileID: 476302279}
   m_Layer: 0
   m_Name: Feda
   m_TagString: Untagged
@@ -3115,6 +3131,67 @@ Transform:
   - {fileID: 1340137284}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &476302279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476302272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
+  dialogueSystem: {fileID: 2049437413}
+--- !u!114 &476302280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476302272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogues
+  Set:
+  - CurrentId: 2
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 513
+        y: 285
+        width: 150
+        height: 125
+      Text: dsfas
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 673
+        y: 285
+        width: 150
+        height: 125
+      Text: adfasdga
+      Type: 0
+      NodeType: 2
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - FedaDef
 --- !u!1001 &504098176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11756,7 +11833,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2049437412}
   - component: {fileID: 2049437413}
-  - component: {fileID: 2049437414}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -11791,23 +11867,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7699245bce3f2d74193be693d29f611b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewDialogueSystem
-  dialogueLogic: {fileID: 338172344}
+  dialogueLogic: {fileID: 0}
   dialoguePanel: {fileID: 986736779}
   uiDialogueText: {fileID: 1123480494}
   nextButton: {fileID: 124588907}
---- !u!114 &2049437414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049437410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
-  newDialogueSystem: {fileID: 2049437413}
 --- !u!1001 &2049640507
 PrefabInstance:
   m_ObjectHideFlags: 0
