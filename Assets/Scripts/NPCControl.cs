@@ -3,6 +3,7 @@ using UnityEngine;
 public class NPCControl : MonoBehaviour
 {
     private NPCData npcData;
+    public NewDialogueSystem newDialogueSystem;
 
     private void Start()
     {
@@ -11,6 +12,6 @@ public class NPCControl : MonoBehaviour
 
     public void Interact()
     {
-        DialogueManager.Instance.StartDialogue(npcData);
+        newDialogueSystem.StartDialogue();
     }
 }
