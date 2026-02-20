@@ -939,7 +939,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049437413}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NewDialogueSystem, Assembly-CSharp
         m_MethodName: AdvanceDialogue
         m_Mode: 1
@@ -2398,7 +2398,6 @@ GameObject:
   - component: {fileID: 338172342}
   - component: {fileID: 338172341}
   - component: {fileID: 338172340}
-  - component: {fileID: 338172339}
   - component: {fileID: 338172344}
   m_Layer: 0
   m_Name: Karl
@@ -2407,19 +2406,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &338172339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338172338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
-  newDialogueSystem: {fileID: 0}
 --- !u!136 &338172340
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2525,35 +2511,77 @@ MonoBehaviour:
   m_GameObject: {fileID: 338172338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2522eb0b47292c4d9b8bfb764cee195, type: 3}
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCData
-  NPCName: "\u041A\u0430\u0440\u043B"
-  NPCFace: {fileID: 21300000, guid: 613c748af5ba14a4886ef61d7ef7aac2, type: 3}
-  NPCReplics:
-  - "\u041F\u0440\u0438\u0432\u0435\u0442, \u043F\u0443\u0442\u043D\u0438\u043A.
-    \u0422\u044B \u0432 \u0434\u043E\u043B\u0438\u043D\u0435 \u041C\u0443\u0434\u0440\u043E\u0441\u0442\u0438.
-    \u0422\u044B \u0437\u0430\u0433\u043B\u044F\u043D\u0443\u043B \u043A \u043D\u0430\u043C
-    \u0442\u0451\u043C\u043D\u044B\u043C \u0432\u0435\u0447\u0435\u0440\u043E\u043C."
-  - "\u0412 \u044D\u0442\u043E\u0439 \u0434\u043E\u043B\u0438\u043D\u0435 \u0436\u0438\u0432\u0451\u0442
-    \u043E\u0447\u0435\u043D\u044C \u043C\u043D\u043E\u0433\u043E \u043B\u044E\u0434\u0435\u0439."
-  - "\u041D\u043E \u043E\u0434\u043D\u043E\u0433\u043E \u044F \u043D\u0435 \u043B\u044E\u0431\u043B\u044E
-    \u0431\u043E\u043B\u044C\u0448\u0435 \u0432\u0441\u0435\u0433\u043E."
-  - "\u042D\u0442\u043E \u0424\u0435\u0434\u044F!"
-  - "\u041E\u043D \u0437\u0430\u0431\u0440\u0430\u043B \u0443 \u043C\u0435\u043D\u044F
-    \u0434\u043E\u043C!"
-  - "\u041E\u043D \u0441\u043A\u0430\u0437\u0430\u043B, \u0447\u0442\u043E \u043D\u0430\u0448\u0451\u043B
-    \xAB\u043B\u0430\u0437\u0435\u0439\u043A\u0443\xBB \u0432 \u0437\u0430\u043A\u043E\u043D\u0435
-    \u0438\u043B\u0438 \u0447\u0442\u043E-\u0442\u043E \u0442\u0430\u043A\u043E\u0435."
-  - "\u041F\u043E\u043C\u043E\u0436\u0435\u0448\u044C \u043C\u043D\u0435?"
-  - "\u041E\u043D \u0436\u0438\u0432\u0451\u0442 \u043D\u0430\u043F\u0440\u043E\u0442\u0438\u0432
-    \u0432\u0445\u043E\u0434\u0430 \u0432 \u0434\u043E\u043B\u0438\u043D\u0443. \u0412\u0445\u043E\u0434
-    \u044D\u0442\u043E \u0442\u0435 \u0432\u043E\u0440\u043E\u0442\u0430 \u0432\u043E\u0437\u043B\u0435
-    \u043D\u0430\u0441."
-  - "\u041C\u0435\u043D\u044F \u0437\u043E\u0432\u0443\u0442 \u041A\u0430\u0440\u043B,
-    \u0435\u0441\u043B\u0438 \u0447\u0442\u043E."
-  - "\u042F \u0431\u0443\u0434\u0443 \u0437\u0434\u0435\u0441\u044C. \u041D\u0438
-    \u043A\u0443\u0434\u0430 \u043D\u0435 \u0443\u0439\u0434\u0443."
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogues
+  Set:
+  - CurrentId: 2
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 404
+        y: 252
+        width: 150
+        height: 125
+      Text: "\u041F\u0440\u0438\u0432\u0435\u0442!"
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 564
+        y: 252
+        width: 150
+        height: 125
+      Text: "\u041F\u043E\u043A\u0430!"
+      Type: 0
+      NodeType: 2
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 2
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 313
+        y: 268
+        width: 150
+        height: 125
+      Text: "\u041F\u0440\u0438\u0432\u0435\u0442!"
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 473
+        y: 268
+        width: 150
+        height: 125
+      Text: "\u041F\u043E\u043A\u0430!"
+      Type: 0
+      NodeType: 2
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - KarlDef
 --- !u!1001 &347622057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2984,8 +3012,6 @@ GameObject:
   - component: {fileID: 476302277}
   - component: {fileID: 476302276}
   - component: {fileID: 476302275}
-  - component: {fileID: 476302274}
-  - component: {fileID: 476302273}
   m_Layer: 0
   m_Name: Feda
   m_TagString: Untagged
@@ -2993,41 +3019,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &476302273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476302272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2522eb0b47292c4d9b8bfb764cee195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCData
-  NPCName: "\u0424\u0435\u0434\u044F"
-  NPCFace: {fileID: 21300000, guid: 613c748af5ba14a4886ef61d7ef7aac2, type: 3}
-  NPCReplics:
-  - "\u041F\u0440\u0438\u0432\u0435\u0442."
-  - "\u042D\u0442\u043E \u043C\u043E\u0439 \u0434\u043E\u043C."
-  - "\u0418 \u0442\u043E\u0442 \u0442\u043E\u0436\u0435. \u042F \u0435\u0433\u043E
-    \u0437\u0430\u0431\u0440\u0430\u043B \u0443 \u0441\u043E\u0441\u0435\u0434\u0430."
-  - "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043B\u0430\u0437\u0435\u0439\u043A\u0438
-    \u0432 \u0437\u0430\u043A\u043E\u043D\u0435."
-  - "\u041D\u0443. \u0422\u0430\u043A \u0447\u0442\u043E \u0442\u044B \u0445\u043E\u0442\u0435\u043B?"
---- !u!114 &476302274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476302272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
-  newDialogueSystem: {fileID: 0}
 --- !u!136 &476302275
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4029,197 +4020,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6283187738200027264, guid: ca12e4d3b8ba552408c001532eecb3ac, type: 3}
   m_PrefabInstance: {fileID: 643951998}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &676493791
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 676493796}
-  - component: {fileID: 676493795}
-  - component: {fileID: 676493794}
-  - component: {fileID: 676493793}
-  - component: {fileID: 676493792}
-  - component: {fileID: 676493797}
-  m_Layer: 0
-  m_Name: Capsule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &676493792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676493791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dialogues
-  Set:
-  - CurrentId: 3
-    NewWindowOpen: 0
-    FirstWindow: 0
-    Windows:
-    - ID: 0
-      Size:
-        serializedVersion: 2
-        x: 893
-        y: 478
-        width: 150
-        height: 125
-      Text: "\u041D\u0430\u0447\u0430\u043B\u043E \u0434\u0438\u0430\u043B\u043E\u0433\u0430."
-      Type: 0
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 01000000
-    - ID: 1
-      Size:
-        serializedVersion: 2
-        x: 1161
-        y: 497
-        width: 150
-        height: 125
-      Text: "\u0421\u0435\u0440\u0435\u0434\u0438\u043D\u0430 \u0434\u0438\u0430\u043B\u043E\u0433\u0430."
-      Type: 0
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 02000000
-    - ID: 2
-      Size:
-        serializedVersion: 2
-        x: 1399
-        y: 504
-        width: 150
-        height: 125
-      Text: "\u041A\u043E\u043D\u0435\u0446 \u0434\u0438\u0430\u043B\u043E\u0433\u0430."
-      Type: 0
-      NodeType: 2
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-  CurrentSet: 0
-  TabList:
-  - Test
---- !u!136 &676493793
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676493791}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &676493794
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676493791}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &676493795
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676493791}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &676493796
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676493791}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.305, y: 1.22, z: 21.839}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &676493797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676493791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
-  newDialogueSystem: {fileID: 2049437413}
 --- !u!1001 &690504486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11955,8 +11755,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049437412}
-  - component: {fileID: 2049437411}
   - component: {fileID: 2049437413}
+  - component: {fileID: 2049437414}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -11964,22 +11764,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2049437411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049437410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db981b70065c85f4886e5e733bf49be2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  dialoguePanel: {fileID: 986736779}
-  dialogueText: {fileID: 1123480494}
-  NPCNameText: {fileID: 1515275377}
-  nextButton: {fileID: 124588907}
 --- !u!4 &2049437412
 Transform:
   m_ObjectHideFlags: 0
@@ -12007,10 +11791,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7699245bce3f2d74193be693d29f611b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewDialogueSystem
-  dialogueLogic: {fileID: 676493792}
+  dialogueLogic: {fileID: 338172344}
   dialoguePanel: {fileID: 986736779}
   uiDialogueText: {fileID: 1123480494}
   nextButton: {fileID: 124588907}
+--- !u!114 &2049437414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049437410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896bc82c93c9a6b4bb8f6696f4d0edf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCControl
+  newDialogueSystem: {fileID: 2049437413}
 --- !u!1001 &2049640507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12605,4 +12402,3 @@ SceneRoots:
   - {fileID: 476302278}
   - {fileID: 2049437412}
   - {fileID: 288645271}
-  - {fileID: 676493796}

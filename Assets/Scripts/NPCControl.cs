@@ -2,26 +2,18 @@ using UnityEngine;
 
 public class NPCControl : MonoBehaviour
 {
-    // Компонент ассета Simple Dialogues, который висит на ЭТОМ NPC
-    private Dialogues myDialogues;
-    public NewDialogueSystem newDialogueSystem;
+    private Dialogues myDialogues; // Ссылка на Dialogues именно этого NPC
+    public NewDialogueSystem dialogueSystem; // Ссылка на менеджер на сцене
 
-    private void Start()
+    void Start()
     {
-        // Ищем компонент диалогов на самом NPC
+        // Берем компонент Dialogues с этого же объекта (с NPC)
         myDialogues = GetComponent<Dialogues>();
     }
 
     public void Interact()
     {
-        if (myDialogues != null)
-        {
-            // ПЕРЕДАЕМ свои диалоги системе и запускаем её
-            newDialogueSystem.StartDialogue(myDialogues);
-        }
-        else
-        {
-            Debug.LogError("На этом NPC нет компонента Dialogues!");
-        }
+        // Передаем СВОИ диалоги в общую систему
+        dialogueSystem.StartDialogue(myDialogues);
     }
 }

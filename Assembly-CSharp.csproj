@@ -53,12 +53,9 @@
     <Compile Include="Assets\Scripts\ScrollsLogic.cs" />
     <Compile Include="Assets\SimpleDialogues\Examples\Scripts\DialogueInteraction.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
-    <Compile Include="Assets\Scripts\FlagManager.cs" />
-    <Compile Include="Assets\Scripts\NPCData.cs" />
     <Compile Include="Assets\SimpleDialogues\Scripts\Dialogues.cs" />
     <Compile Include="Assets\Scripts\NPCControl.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
-    <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\NewDialogueSystem.cs" />
   </ItemGroup>
   <ItemGroup>

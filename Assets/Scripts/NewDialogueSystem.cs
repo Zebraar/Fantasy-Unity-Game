@@ -11,33 +11,18 @@ public class NewDialogueSystem : MonoBehaviour
     public Text uiDialogueText;
     public Button nextButton;
 
-    public void StartDialogue(Dialogues newLogic)
+    public void StartDialogue(Dialogues npcDialogues) 
     {
-        if (newLogic == null) {
-            Debug.LogError("Критическая ошибка: NPC не передал свои диалоги!");
-            return;
-        }
+        if (npcDialogues == null) return;
 
-        dialogueLogic = newLogic;
-        
-        if (dialoguePanel == null) {
-            Debug.LogError("Критическая ошибка: В инспекторе не перетащена DialoguePanel!");
-            return;
-        }
-
-        // ВКЛЮЧАЕМ ПАНЕЛЬ
+        // Подменяем текущую логику на логику того NPC, с которым говорим
+        dialogueLogic = npcDialogues; 
+    
         dialoguePanel.SetActive(true);
-        
-        // ПРОВЕРКА РОДИТЕЛЯ (Canvas)
-        Canvas parentCanvas = dialoguePanel.GetComponentInParent<Canvas>();
-        if (parentCanvas != null && !parentCanvas.gameObject.activeInHierarchy) {
-            Debug.LogWarning("ВНИМАНИЕ: Панель включена, но её Canvas выключен! Включаю Canvas...");
-            parentCanvas.gameObject.SetActive(true);
-        }
-
-        dialogueLogic.Reset();
+        dialogueLogic.Reset(); // Сбрасываем дерево конкретно этого NPC
         UpdateUI();
-        Debug.Log("Скрипт: Панель должна быть видна сейчас. Текст: " + dialogueLogic.GetCurrentDialogue());
+    
+        Debug.Log("Говорим с: " + npcDialogues.gameObject.name);
     }
 
     public void AdvanceDialogue()
