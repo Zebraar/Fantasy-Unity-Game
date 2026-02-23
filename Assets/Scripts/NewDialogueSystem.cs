@@ -40,6 +40,10 @@ public class NewDialogueSystem : MonoBehaviour
     {
         if (uiDialogueText != null) {
             uiDialogueText.text = dialogueLogic.GetCurrentDialogue();
+            if (dialogueLogic.HasTrigger() == true)
+            {
+                Trigger(dialogueLogic.GetTrigger());
+            }
         }
     }
 
@@ -60,6 +64,11 @@ public class NewDialogueSystem : MonoBehaviour
         dialogueLogic.NextChoice(playerChoice);
         choicePanel.SetActive(false);
         UpdateUI();
+    }
+
+    public void Trigger(string triggerName)
+    {
+        
     }
 
     public void EndDialogue()
