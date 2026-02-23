@@ -8563,8 +8563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 134.3, y: 90.8}
-  m_SizeDelta: {x: 1662.3, y: 103.7}
+  m_AnchoredPosition: {x: 64.5, y: 90.8}
+  m_SizeDelta: {x: 1522.6, y: 103.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1123480494
 MonoBehaviour:
@@ -12742,6 +12742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggersLogic
   newDialogueSystem: {fileID: 2049437413}
+  fedaDialogues: {fileID: 476302280}
 --- !u!1001 &2049640507
 PrefabInstance:
   m_ObjectHideFlags: 0
