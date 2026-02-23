@@ -29,6 +29,7 @@ public class NewDialogueSystem : MonoBehaviour
     {
         int result = dialogueLogic.Next();
         if (result == -1) EndDialogue();
+        if (result > 0) Choice(result);
         else UpdateUI();
     }
 
@@ -37,6 +38,11 @@ public class NewDialogueSystem : MonoBehaviour
         if (uiDialogueText != null) {
             uiDialogueText.text = dialogueLogic.GetCurrentDialogue();
         }
+    }
+
+    public void Choice(int choicesAmount)
+    {
+        
     }
 
     public void EndDialogue()
