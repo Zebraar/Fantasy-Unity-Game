@@ -54,6 +54,12 @@ public class NewDialogueSystem : MonoBehaviour
         }
     }
 
+    public void ShowNextChoice(int buttonNum)
+    {
+        string playerChoice = choiceButtons[buttonNum].gameObject.GetComponentInChildren<Text>().text;
+        dialogueLogic.NextChoice(playerChoice);
+    }
+
     public void EndDialogue()
     {
         dialoguePanel.SetActive(false);
