@@ -10,6 +10,8 @@ public class NewDialogueSystem : MonoBehaviour
     public GameObject dialoguePanel;
     public Text uiDialogueText;
     public Button nextButton;
+    public GameObject choicePanel;
+    public Button[] choiceButtons;
 
     public void StartDialogue(Dialogues npcDialogues) 
     {
@@ -42,7 +44,8 @@ public class NewDialogueSystem : MonoBehaviour
 
     public void Choice(int choicesAmount)
     {
-        
+        choicePanel.SetActive(true);
+        for (int i = 0; i < choicesAmount; i++) choiceButtons[i].gameObject.SetActive(true);
     }
 
     public void EndDialogue()
