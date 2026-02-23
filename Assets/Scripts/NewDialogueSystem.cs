@@ -58,6 +58,7 @@ public class NewDialogueSystem : MonoBehaviour
     {
         string playerChoice = choiceButtons[buttonNum].gameObject.GetComponentInChildren<Text>().text;
         dialogueLogic.NextChoice(playerChoice);
+        UpdateUI();
     }
 
     public void EndDialogue()
