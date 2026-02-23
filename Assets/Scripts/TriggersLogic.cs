@@ -4,6 +4,7 @@ public class TriggersLogic : MonoBehaviour
 {
 
     public NewDialogueSystem newDialogueSystem;
+    public Dialogues fedaDialogues;
     
     public void TriggerHandler(string triggerName)
     {
@@ -17,6 +18,9 @@ public class TriggersLogic : MonoBehaviour
                 newDialogueSystem.ShowDialogueTree("KarlChoice1");
                 newDialogueSystem.EndDialogue();
                 break;  
+            case "PlayerKnowkarlHistory":
+                fedaDialogues.SetTree("FedaAfterKarlDialogue");
+                break;    
         }
     }
 
