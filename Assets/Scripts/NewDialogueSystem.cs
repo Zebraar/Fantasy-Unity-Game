@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,8 +45,13 @@ public class NewDialogueSystem : MonoBehaviour
 
     public void Choice(int choicesAmount)
     {
+        string[] choices = dialogueLogic.GetChoices();
         choicePanel.SetActive(true);
-        for (int i = 0; i < choicesAmount; i++) choiceButtons[i].gameObject.SetActive(true);
+        for (int i = 0; i < choicesAmount; i++) 
+        {
+            choiceButtons[i].gameObject.SetActive(true);
+            choiceButtons[i].gameObject.GetComponentInChildren<Text>().text = choices[i];
+        }
     }
 
     public void EndDialogue()
