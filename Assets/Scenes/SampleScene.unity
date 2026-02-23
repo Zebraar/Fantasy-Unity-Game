@@ -644,7 +644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &112072799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2938,7 +2938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &393000750
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6020,7 +6020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &964792922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6610,7 +6610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &986736780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10962,7 +10962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1654730695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12385,6 +12385,12 @@ MonoBehaviour:
   dialoguePanel: {fileID: 986736779}
   uiDialogueText: {fileID: 1123480494}
   nextButton: {fileID: 124588907}
+  choicePanel: {fileID: 965383012}
+  choiceButtons:
+  - {fileID: 112072800}
+  - {fileID: 393000751}
+  - {fileID: 964792923}
+  - {fileID: 1654730696}
 --- !u!1001 &2049640507
 PrefabInstance:
   m_ObjectHideFlags: 0
