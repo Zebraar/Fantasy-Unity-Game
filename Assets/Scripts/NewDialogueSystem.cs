@@ -26,7 +26,7 @@ public class NewDialogueSystem : MonoBehaviour
         dialogueLogic = npcDialogues; 
     
         dialoguePanel.SetActive(true);
-        dialogueLogic.Reset(); // Сбрасываем дерево конкретно этого NPC
+        // dialogueLogic.Reset(); // Сбрасываем дерево конкретно этого NPC
         UpdateUI();
     
         Debug.Log("Говорим с: " + npcDialogues.gameObject.name);
@@ -68,6 +68,11 @@ public class NewDialogueSystem : MonoBehaviour
         dialogueLogic.NextChoice(playerChoice);
         choicePanel.SetActive(false);
         UpdateUI();
+    }
+
+    public void ShowDialogueTree(string dialogueTree)
+    {
+        dialogueLogic.SetTree(dialogueTree);
     }
 
     public void EndDialogue()
