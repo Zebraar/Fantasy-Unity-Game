@@ -2664,7 +2664,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 9
       Trigger: 1
-      TriggerText: isPlayerHelpKarl
+      TriggerText: PlayerHelpKarl
       Connections: 
     - ID: 12
       Size:
@@ -2679,7 +2679,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 10
       Trigger: 1
-      TriggerText: isPlayerDontHelpKarl
+      TriggerText: PlayerDontHelpKarl
       Connections: 
   - CurrentId: 3
     NewWindowOpen: 0
@@ -2800,7 +2800,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 4
       Trigger: 1
-      TriggerText: isPlayerHelpKarl
+      TriggerText: PlayerHelpKarl
       Connections: 
   - CurrentId: 1
     NewWindowOpen: 0
@@ -12504,6 +12504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2049437412}
   - component: {fileID: 2049437413}
+  - component: {fileID: 2049437414}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -12548,6 +12549,20 @@ MonoBehaviour:
   - {fileID: 393000751}
   - {fileID: 964792923}
   - {fileID: 1654730696}
+  triggersLogic: {fileID: 2049437414}
+--- !u!114 &2049437414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049437410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f7d81560061cb4dbf091d10b6f8ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggersLogic
+  newDialogueSystem: {fileID: 2049437413}
 --- !u!1001 &2049640507
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,9 +11,11 @@ public class TriggersLogic : MonoBehaviour
         {
             case "PlayerHelpKarl":
                 newDialogueSystem.ShowDialogueTree("KarlWait");
+                newDialogueSystem.EndDialogue();
                 break;
             case "PlayerDontHelpKarl":
                 newDialogueSystem.ShowDialogueTree("KarlChoice1");
+                newDialogueSystem.EndDialogue();
                 break;  
         }
     }
