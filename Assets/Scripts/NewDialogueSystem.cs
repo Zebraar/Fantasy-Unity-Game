@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,9 @@ public class NewDialogueSystem : MonoBehaviour
     public Button nextButton;
     public GameObject choicePanel;
     public Button[] choiceButtons;
+
+    [Header("Классы")]
+    public TriggersLogic triggersLogic;
 
     public void StartDialogue(Dialogues npcDialogues) 
     {
@@ -42,7 +46,7 @@ public class NewDialogueSystem : MonoBehaviour
             uiDialogueText.text = dialogueLogic.GetCurrentDialogue();
             if (dialogueLogic.HasTrigger() == true)
             {
-                Trigger(dialogueLogic.GetTrigger());
+                triggersLogic.TriggerHandler(dialogueLogic.GetTrigger());
             }
         }
     }
@@ -64,11 +68,6 @@ public class NewDialogueSystem : MonoBehaviour
         dialogueLogic.NextChoice(playerChoice);
         choicePanel.SetActive(false);
         UpdateUI();
-    }
-
-    public void Trigger(string triggerName)
-    {
-        
     }
 
     public void EndDialogue()
