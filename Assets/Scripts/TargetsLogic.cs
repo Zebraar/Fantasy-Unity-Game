@@ -6,6 +6,7 @@ public class TargetsLogic : MonoBehaviour
 
     [Header("UI")]
     public GameObject TargetPanel;
+    public GameObject NewTextParent;
     public Text TargetText;
 
     void Start()
@@ -22,7 +23,7 @@ public class TargetsLogic : MonoBehaviour
     public void AddTarget(string NewTarget, string TargetName)
     {
         Text NewText = Instantiate(TargetText);
-        NewText.transform.SetParent(TargetPanel.transform, false);
+        NewText.transform.SetParent(NewTextParent.transform, false);
         NewText.text = NewTarget;
         NewText.gameObject.name = TargetName;
     }
