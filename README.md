@@ -70,6 +70,13 @@
 
 ---
 
+## 🧰 Использованные инструменты
+  - Skybox Series Free by Avionx из Unity Asset Store
+  - Low Poly Fantasy Medieval Village Vol.2 Lite by JustCreate из Unity Asset Store
+  - Simple Dialogues by 7ark Games из Unity Asset Store
+    
+---    
+
 ## ❤️ Поддержка
 
 Если вам понравилась игра:
