@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs/Buildings/FantasyMedievalTown_LITE/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs/Buildings/FantasyMedievalTown_LITE/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\unity projects\Mega Game
   m_LockTracker:
@@ -613,20 +613,20 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 76}
     m_SelectedIDs:
-    - m_Data: 60002
+    - m_Data: 63488
     m_LastClickedID:
-      m_Data: 60002
+      m_Data: 63488
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 59872
-    - m_Data: 59874
-    - m_Data: 59876
-    - m_Data: 59878
-    - m_Data: 59880
-    - m_Data: 59882
-    - m_Data: 59884
-    - m_Data: 59886
-    - m_Data: 59888
+    - m_Data: 60154
+    - m_Data: 60156
+    - m_Data: 60158
+    - m_Data: 60160
+    - m_Data: 60162
+    - m_Data: 60164
+    - m_Data: 60166
+    - m_Data: 60168
+    - m_Data: 60170
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -659,15 +659,15 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 59872
-    - m_Data: 59874
-    - m_Data: 59876
-    - m_Data: 59878
-    - m_Data: 59880
-    - m_Data: 59882
-    - m_Data: 59884
-    - m_Data: 59886
-    - m_Data: 59888
+    - m_Data: 60154
+    - m_Data: 60156
+    - m_Data: 60158
+    - m_Data: 60160
+    - m_Data: 60162
+    - m_Data: 60164
+    - m_Data: 60166
+    - m_Data: 60168
+    - m_Data: 60170
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: []
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -823,7 +823,29 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -133696
+      - m_Data: -133296
+      - m_Data: -126708
+      - m_Data: -115040
+      - m_Data: -103480
+      - m_Data: -91922
+      - m_Data: -75548
+      - m_Data: -75148
+      - m_Data: -68910
+      - m_Data: -63432
+      - m_Data: -58074
+      - m_Data: -47346
+      - m_Data: -36620
+      - m_Data: -18330
+      - m_Data: -17634
       - m_Data: -1304
+      - m_Data: 55276
+      - m_Data: 55292
+      - m_Data: 55462
+      - m_Data: 55684
+      - m_Data: 55694
+      - m_Data: 55882
+      - m_Data: 56066
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1416,9 +1438,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 20.91259, y: 2.5772855, z: 17.480892}
+    m_Target: {x: 85.73213, y: 3.990044, z: 63.520596}
     speed: 2
-    m_Value: {x: 20.91259, y: 2.5772855, z: 17.480892}
+    m_Value: {x: 85.73213, y: 3.990044, z: 63.520596}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1464,9 +1486,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09160641, y: -0.08767341, z: -0.008747125, w: -0.99249}
+    m_Target: {x: -0.05232334, y: -0.5711721, z: 0.03406277, w: -0.8192524}
     speed: 2
-    m_Value: {x: 0.0916064, y: -0.08767341, z: -0.008747124, w: -0.99248993}
+    m_Value: {x: 0.052323338, y: 0.57117206, z: -0.034062766, w: 0.8192524}
   m_Size:
     m_Target: 2.8750815
     speed: 2
@@ -1575,7 +1597,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
