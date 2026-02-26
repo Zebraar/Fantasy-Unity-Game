@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 200f;
     public float camOffset = 1.5f;
     public Inventory inventory;
+    public TargetsLogic targetsLogic;
 
     void Awake()
     {
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
         {
             inv.SetActive(!inv.activeSelf);
             mainCanvas.SetActive(!mainCanvas.activeSelf);
+            targetsLogic.ShowTargetPanel();
         }
         
         if(Input.GetKeyUp(KeyCode.LeftControl)) 
