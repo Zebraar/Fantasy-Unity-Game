@@ -49,6 +49,7 @@
     <Analyzer Include="F:\unity versions\Editor\6000.3.4f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\TargetsLogic.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScrollsLogic.cs" />
     <Compile Include="Assets\SimpleDialogues\Examples\Scripts\DialogueInteraction.cs" />
