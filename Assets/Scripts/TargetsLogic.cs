@@ -10,9 +10,9 @@ public class TargetsLogic : MonoBehaviour
     public Text TargetText;
 
     void Start()
-    {
+    {    
         ShowTargetPanel();
-        AddTarget("Поговори с кем-то", "Talk");
+        for(int i = 0; i < 10; i++) AddTarget("Поговори с кем-то", "Talk");
     }
 
     public void ShowTargetPanel()
