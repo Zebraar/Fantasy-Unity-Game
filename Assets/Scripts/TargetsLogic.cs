@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TargetsLogic : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    [Header("UI")]
+    public GameObject TargetPanel;
+    public Text TargetText;
+
+    public void ShowTargetPanel()
     {
-        
+        TargetPanel.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddTarget(string NewTarget, string TargetName)
     {
-        
+        Text NewText = Instantiate(TargetText);
+        NewText.text = NewTarget;
+        NewText.gameObject.name = TargetName;
     }
+
 }
