@@ -9,6 +9,11 @@ public class TargetsLogic : MonoBehaviour
     public GameObject NewTextParent;
     public Text TargetText;
 
+    void Start()
+    {
+        AddTarget("Поговори с кем-то", "Talk With Someone");
+    }
+
     public void ShowTargetPanel()
     {
         TargetPanel.SetActive(true);
