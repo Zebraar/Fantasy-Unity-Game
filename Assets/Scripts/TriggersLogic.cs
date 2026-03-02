@@ -24,6 +24,10 @@ public class TriggersLogic : MonoBehaviour
             case "PlayerKnowkarlHistory":
                 fedaDialogues.SetTree("FedaAfterKarlDialogue");
                 break;    
+            case "PlayerTalkWithFeda":
+                targetsLogic.CompleteTarget("TalkWithFeda");
+                targetsLogic.AddTarget("Посмотри записи в архиве", "CheckOutTheEntriesInTheArchive");
+                break;    
         }
     }
 

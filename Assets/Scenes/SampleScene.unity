@@ -4818,7 +4818,7 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 
-  - CurrentId: 17
+  - CurrentId: 18
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -5064,12 +5064,26 @@ MonoBehaviour:
         height: 125
       Text: "\u041D\u0443, \u043B\u0430\u0434\u043D\u043E. \u041F\u043E\u043A\u0430."
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 15
       Trigger: 0
       TriggerText: 
+      Connections: 11000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 2754
+        y: 1008
+        width: 150
+        height: 125
+      Text: trigger
+      Type: 0
+      NodeType: 2
+      Parent: 16
+      Trigger: 1
+      TriggerText: PlayerTalkWithFeda
       Connections: 
-  CurrentSet: 1
+  CurrentSet: 0
   TabList:
   - FedaDef
   - FedaAfterKarlDialogue
@@ -10490,7 +10504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TargetsLogic
   TargetPanel: {fileID: 1091270465}
   NewTextParent: {fileID: 1882978221}
-  TargetText: {fileID: 629912143}
+  TargetTextObj: {fileID: 629912143}
 --- !u!1001 &1094062194
 PrefabInstance:
   m_ObjectHideFlags: 0
