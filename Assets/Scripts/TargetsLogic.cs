@@ -9,10 +9,9 @@ public class TargetsLogic : MonoBehaviour
     [Header("UI")]
     public GameObject TargetPanel;
     public GameObject NewTextParent;
-    public Text TargetText;
+    public Text TargetTextObj;
     [Header("Array")]
-    List<string> TargetsNames = new List<string>();
-    List<Text> Targets = new List<Text>();
+    private Dictionary<string, Text> targetsMap = new Dictionary<string, Text>();
 
     void Start()
     {
@@ -24,19 +23,25 @@ public class TargetsLogic : MonoBehaviour
         TargetPanel.SetActive(true);
     }
 
-    public void AddTarget(string NewTarget, string TargetName)
+    public void AddTarget(string TargetText, string TargetName)
     {
-        Text NewText = Instantiate(TargetText);
+        Text NewText = Instantiate(TargetTextObj);
         NewText.transform.SetParent(NewTextParent.transform, false);
-        NewText.text = NewTarget;
+        NewText.text = TargetText;
         NewText.gameObject.name = TargetName;
-        Targets.Add(NewText);
-        TargetsNames.Add(TargetName);
+        targetsMap.Add(TargetName, NewText);
     }
 
     public void CompleteTarget(string TargetName)
     {
-        Targets[TargetsNames.IndexOf(TargetName)].text += "✅";
+        if (targetsMap.ContainsKey(TargetName))
+        {
+            targetsMap[TargetName].text += " ✅";
+        }
+        else
+        {
+            Debug.LogWarning($"Цель с именем {TargetName} не найдена!");
+        }
     }
 
 }
