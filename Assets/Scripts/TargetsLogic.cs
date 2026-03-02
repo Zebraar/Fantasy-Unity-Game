@@ -13,11 +13,6 @@ public class TargetsLogic : MonoBehaviour
     [Header("Array")]
     private Dictionary<string, Text> targetsMap = new Dictionary<string, Text>();
 
-    void Start()
-    {
-        AddTarget("Поговори с кем-то", "TalkWithSomeone");
-    }
-
     public void ShowTargetPanel()
     {
         TargetPanel.SetActive(true);
