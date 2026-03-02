@@ -25,6 +25,7 @@ public class TriggersLogic : MonoBehaviour
                 fedaDialogues.SetTree("FedaAfterKarlDialogue");
                 break;    
             case "PlayerTalkWithFeda":
+                newDialogueSystem.EndDialogue();
                 targetsLogic.CompleteTarget("TalkWithFeda");
                 targetsLogic.AddTarget("Посмотри записи в архиве", "CheckOutTheEntriesInTheArchive");
                 break;    

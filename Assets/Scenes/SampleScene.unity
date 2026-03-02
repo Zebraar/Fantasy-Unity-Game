@@ -4818,7 +4818,7 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 
-  - CurrentId: 18
+  - CurrentId: 19
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -5068,12 +5068,12 @@ MonoBehaviour:
       Parent: 15
       Trigger: 0
       TriggerText: 
-      Connections: 11000000
-    - ID: 17
+      Connections: 12000000
+    - ID: 18
       Size:
         serializedVersion: 2
-        x: 2754
-        y: 1008
+        x: 2532
+        y: 1039
         width: 150
         height: 125
       Text: trigger
@@ -5083,7 +5083,7 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: PlayerTalkWithFeda
       Connections: 
-  CurrentSet: 0
+  CurrentSet: 1
   TabList:
   - FedaDef
   - FedaAfterKarlDialogue
