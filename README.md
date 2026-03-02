@@ -1,6 +1,6 @@
 # 🏠 Ferl
 
-> Инди-игра на Unity о конфликте, законе и выборе.
+> Инди-игра на Unity о конфликте, законе и средневековьe.
 
 ---
 
@@ -71,9 +71,11 @@
 ---
 
 ## 🧰 Использованные инструменты
-  - Skybox Series Free by Avionx из Unity Asset Store
-  - Low Poly Fantasy Medieval Village Vol.2 Lite by JustCreate из Unity Asset Store
-  - Simple Dialogues by 7ark Games из Unity Asset Store
+  - Unity движок для игр
+  - Visual Studio Code от Microsoft
+  - Skybox Series Free от Avionx из Unity Asset Store
+  - Low Poly Fantasy Medieval Village Vol.2 Lite от JustCreate из Unity Asset Store
+  - Simple Dialogues от 7ark Games из Unity Asset Store
     
 ---    
 
