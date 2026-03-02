@@ -5,6 +5,7 @@ public class TriggersLogic : MonoBehaviour
 
     public NewDialogueSystem newDialogueSystem;
     public Dialogues fedaDialogues;
+    public TargetsLogic targetsLogic;
     
     public void TriggerHandler(string triggerName)
     {
@@ -13,6 +14,7 @@ public class TriggersLogic : MonoBehaviour
             case "PlayerHelpKarl":
                 newDialogueSystem.ShowDialogueTree("KarlWait");
                 newDialogueSystem.EndDialogue();
+                targetsLogic.AddTarget("Поговори с Федей", "TalkWithFeda");
                 break;
             case "PlayerDontHelpKarl":
                 newDialogueSystem.ShowDialogueTree("KarlChoice1");

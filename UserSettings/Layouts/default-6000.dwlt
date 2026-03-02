@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 44
+  controlID: 108
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,12 +273,12 @@ MonoBehaviour:
     height: 967
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs/Buildings/FantasyMedievalTown_LITE/Prefabs
+    - Assets/Images/Icons
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -604,29 +604,29 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Buildings/FantasyMedievalTown_LITE/Prefabs
+  - Assets/Images/Icons
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\unity projects\Mega Game
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 76}
+    scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 63488
+    - m_Data: 60278
     m_LastClickedID:
-      m_Data: 63488
+      m_Data: 60278
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 60154
-    - m_Data: 60156
-    - m_Data: 60158
-    - m_Data: 60160
-    - m_Data: 60162
-    - m_Data: 60164
-    - m_Data: 60166
-    - m_Data: 60168
-    - m_Data: 60170
+    - m_Data: 60194
+    - m_Data: 60196
+    - m_Data: 60198
+    - m_Data: 60200
+    - m_Data: 60202
+    - m_Data: 60204
+    - m_Data: 60206
+    - m_Data: 60208
+    - m_Data: 60210
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -659,15 +659,15 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 60154
-    - m_Data: 60156
-    - m_Data: 60158
-    - m_Data: 60160
-    - m_Data: 60162
-    - m_Data: 60164
-    - m_Data: 60166
-    - m_Data: 60168
-    - m_Data: 60170
+    - m_Data: 60194
+    - m_Data: 60196
+    - m_Data: 60198
+    - m_Data: 60200
+    - m_Data: 60202
+    - m_Data: 60204
+    - m_Data: 60206
+    - m_Data: 60208
+    - m_Data: 60210
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -823,29 +823,31 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -133696
-      - m_Data: -133296
-      - m_Data: -126708
-      - m_Data: -115040
-      - m_Data: -103480
-      - m_Data: -91922
-      - m_Data: -75548
-      - m_Data: -75148
-      - m_Data: -68910
-      - m_Data: -63432
-      - m_Data: -58074
-      - m_Data: -47346
-      - m_Data: -36620
-      - m_Data: -18330
-      - m_Data: -17634
+      - m_Data: -231122
+      - m_Data: -230832
+      - m_Data: -224164
+      - m_Data: -212440
+      - m_Data: -200860
+      - m_Data: -189282
+      - m_Data: -184442
+      - m_Data: -184042
+      - m_Data: -177408
+      - m_Data: -171536
+      - m_Data: -165786
+      - m_Data: -154274
+      - m_Data: -142764
+      - m_Data: -138094
+      - m_Data: -137694
+      - m_Data: -131060
+      - m_Data: -125188
+      - m_Data: -119438
+      - m_Data: -107926
+      - m_Data: -96416
+      - m_Data: -75130
       - m_Data: -1304
-      - m_Data: 55276
-      - m_Data: 55292
-      - m_Data: 55462
-      - m_Data: 55684
-      - m_Data: 55694
-      - m_Data: 55882
-      - m_Data: 56066
+      - m_Data: 55448
+      - m_Data: 55480
+      - m_Data: 56126
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -892,8 +894,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 491
-    y: 24
+    x: 490
+    y: 79
     width: 1498
     height: 941
   m_SerializedDataModeController:
@@ -1438,9 +1440,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 85.73213, y: 3.990044, z: 63.520596}
+    m_Target: {x: 20.02462, y: 1.6181291, z: 17.566486}
     speed: 2
-    m_Value: {x: 85.73213, y: 3.990044, z: 63.520596}
+    m_Value: {x: 20.02462, y: 1.6181291, z: 17.566486}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1486,9 +1488,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.05232334, y: -0.5711721, z: 0.03406277, w: -0.8192524}
+    m_Target: {x: -0.015924113, y: -0.0063465396, z: -0.0017213366, w: -1.0005533}
     speed: 2
-    m_Value: {x: 0.052323338, y: 0.57117206, z: -0.034062766, w: 0.8192524}
+    m_Value: {x: -0.015924113, y: -0.00634654, z: -0.0017213367, w: -1.0005533}
   m_Size:
     m_Target: 2.8750815
     speed: 2
@@ -1547,8 +1549,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 490
-    y: 79
+    x: 491
+    y: 24
     width: 1498
     height: 941
   m_SerializedDataModeController:
@@ -1597,7 +1599,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
