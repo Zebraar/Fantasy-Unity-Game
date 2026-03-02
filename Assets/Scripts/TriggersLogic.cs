@@ -14,6 +14,7 @@ public class TriggersLogic : MonoBehaviour
             case "PlayerHelpKarl":
                 newDialogueSystem.ShowDialogueTree("KarlWait");
                 newDialogueSystem.EndDialogue();
+                targetsLogic.CompleteTarget("TalkWithSomeone");
                 targetsLogic.AddTarget("Поговори с Федей", "TalkWithFeda");
                 break;
             case "PlayerDontHelpKarl":

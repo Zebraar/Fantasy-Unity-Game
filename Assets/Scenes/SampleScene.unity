@@ -17352,6 +17352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggersLogic
   newDialogueSystem: {fileID: 2049437413}
   fedaDialogues: {fileID: 476302280}
+  targetsLogic: {fileID: 1091270469}
 --- !u!1001 &2049640507
 PrefabInstance:
   m_ObjectHideFlags: 0
