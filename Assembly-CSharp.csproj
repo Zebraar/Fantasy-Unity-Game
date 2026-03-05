@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\TargetsLogic.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\MainMenuHandler.cs" />
     <Compile Include="Assets\Scripts\ScrollsLogic.cs" />
     <Compile Include="Assets\SimpleDialogues\Examples\Scripts\DialogueInteraction.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
