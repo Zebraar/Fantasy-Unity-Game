@@ -76,6 +76,7 @@
   - Skybox Series Free от Avionx из Unity Asset Store
   - Low Poly Fantasy Medieval Village Vol.2 Lite от JustCreate из Unity Asset Store
   - Simple Dialogues от 7ark Games из Unity Asset Store
+  - Camping Low Poly Pack Lite от Pixolite из Unity Asset Store
     
 ---    
 
