@@ -49,8 +49,8 @@
 
 Актуальные версии доступны во вкладке **Releases** и на странице itch.io:
 
-👉 [Скачать последнюю версию на GitHub](../../releases)
-👉 Страница на itch.io - https://zebraaar.itch.io/ferl
+- 👉 [Скачать последнюю версию на GitHub](../../releases)
+- 👉 Страница на itch.io - https://zebraaar.itch.io/ferl
 
 ---
 
