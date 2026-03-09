@@ -6,6 +6,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public GameObject settingsPanel;
     public GameObject gameInfoPanel;
+    public GameObject howToPlayPanel;
     
     public void StartGame()
     {
@@ -30,6 +31,16 @@ public class MainMenuHandler : MonoBehaviour
     public void GameInfoHide()
     {
         gameInfoPanel.SetActive(false);
+    }
+
+    public void HowToPlayShow()
+    {
+        howToPlayPanel.SetActive(true);
+    }
+
+    public void HowToPlayHide()
+    {
+        howToPlayPanel.SetActive(false);
     }
 
     public void ExitGame()
