@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         defaultCamY = cam.transform.position.y;
+        Application.targetFrameRate = 120;
     }
 
     void Update()
