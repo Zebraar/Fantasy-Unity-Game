@@ -47,9 +47,10 @@
 
 ## 🚀 Скачать игру
 
-Актуальные версии доступны во вкладке **Releases**:
+Актуальные версии доступны во вкладке **Releases** и на странице itch.io:
 
-👉 [Скачать последнюю версию](../../releases)
+- 👉 [Скачать последнюю версию на GitHub](../../releases)
+- 👉 Страница на itch.io - https://zebraaar.itch.io/ferl
 
 ---
 
@@ -76,6 +77,7 @@
   - Skybox Series Free от Avionx из Unity Asset Store
   - Low Poly Fantasy Medieval Village Vol.2 Lite от JustCreate из Unity Asset Store
   - Simple Dialogues от 7ark Games из Unity Asset Store
+  - Camping Low Poly Pack Lite от Pixolite из Unity Asset Store
     
 ---    
 
