@@ -2526,10 +2526,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1488406}
     m_Modifications:
-    - target: {fileID: 2393441814326864876, guid: 1a09ebba9d893894da11cb4098853e64, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 3531657643039958546, guid: 1a09ebba9d893894da11cb4098853e64, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5430008
@@ -2573,14 +2569,6 @@ PrefabInstance:
     - target: {fileID: 4199931311969860776, guid: 1a09ebba9d893894da11cb4098853e64, type: 3}
       propertyPath: m_Name
       value: FlowerPot_03_LITE
-      objectReference: {fileID: 0}
-    - target: {fileID: 4199931311969860776, guid: 1a09ebba9d893894da11cb4098853e64, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6833377216977361574, guid: 1a09ebba9d893894da11cb4098853e64, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4653,21 +4641,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1164477450}
     m_Modifications:
-    - target: {fileID: 1088102342826403616, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 5047205710721102415, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
       propertyPath: m_Name
       value: Lantern_01_LITE (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5047205710721102415, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5425286092005458437, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5566614576695011573, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4708,14 +4684,6 @@ PrefabInstance:
     - target: {fileID: 5566614576695011573, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184640156429227767, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6900982155001014393, guid: 3e833f3c41837e2499848cbd3a40b527, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14682,6 +14650,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 967126469}
     m_Modifications:
+    - target: {fileID: 1254325459450988529, guid: ca12e4d3b8ba552408c001532eecb3ac, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.041261047
+      objectReference: {fileID: 0}
     - target: {fileID: 1800804707280995055, guid: ca12e4d3b8ba552408c001532eecb3ac, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
