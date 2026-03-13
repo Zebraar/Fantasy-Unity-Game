@@ -4,6 +4,7 @@ public class NPCControl : MonoBehaviour
 {
     private Dialogues myDialogues; // Ссылка на Dialogues именно этого NPC
     public NewDialogueSystem dialogueSystem; // Ссылка на менеджер на сцене
+    public string NPCName;
 
     void Start()
     {
@@ -14,6 +15,6 @@ public class NPCControl : MonoBehaviour
     public void Interact()
     {
         // Передаем СВОИ диалоги в общую систему
-        dialogueSystem.StartDialogue(myDialogues);
+        dialogueSystem.StartDialogue(myDialogues, NPCName);
     }
 }

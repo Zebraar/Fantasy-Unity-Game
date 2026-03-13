@@ -4644,6 +4644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCControl
   dialogueSystem: {fileID: 2049437413}
+  NPCName: "\u041A\u0430\u0440\u043B"
 --- !u!1001 &347622057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6213,6 +6214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCControl
   dialogueSystem: {fileID: 2049437413}
+  NPCName: "\u0424\u0435\u0434\u044F"
 --- !u!114 &476302280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23574,6 +23576,7 @@ MonoBehaviour:
   - {fileID: 393000751}
   - {fileID: 964792923}
   - {fileID: 1654730696}
+  uiNPCName: {fileID: 1515275377}
   triggersLogic: {fileID: 2049437414}
 --- !u!114 &2049437414
 MonoBehaviour:

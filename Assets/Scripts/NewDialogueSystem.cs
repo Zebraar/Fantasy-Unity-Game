@@ -12,11 +12,12 @@ public class NewDialogueSystem : MonoBehaviour
     public Button nextButton;
     public GameObject choicePanel;
     public Button[] choiceButtons;
+    public Text uiNPCName;
 
     [Header("Классы")]
     public TriggersLogic triggersLogic;
 
-    public void StartDialogue(Dialogues npcDialogues) 
+    public void StartDialogue(Dialogues npcDialogues, string NPCName) 
     {
         if (npcDialogues == null) return;
 
@@ -25,6 +26,9 @@ public class NewDialogueSystem : MonoBehaviour
     
         dialoguePanel.SetActive(true);
         dialogueLogic.Reset(); // Сбрасываем дерево конкретно этого NPC
+
+        if(NPCName == null) Debug.LogWarning("У " + npcDialogues.gameObject.name + " не назначено имя!");
+        else uiNPCName.text = NPCName;
         UpdateUI();
     
         Debug.Log("Говорим с: " + npcDialogues.gameObject.name);
