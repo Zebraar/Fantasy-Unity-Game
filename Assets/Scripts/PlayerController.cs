@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject inv;
     public GameObject mainCanvas;
+    public GameObject pauseCanvas;
     public GameObject cam;
     private float currentXRotation = 0f;
     private bool isCrouch = false;
+    private bool isPause = false;
     private float defaultCamY;
     float baseSpeed = 2f;
     public float jumpForce = 200f;
@@ -91,6 +93,11 @@ public class PlayerController : MonoBehaviour
             currentXRotation = Mathf.Clamp(currentXRotation, -60f, 60f);
             cam.transform.localRotation = Quaternion.Euler(currentXRotation, 0, 0);
         }
+
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            Pause();
+        }
         
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 1.1f);
         if(isGrounded && Input.GetKeyUp(KeyCode.Space))
@@ -160,6 +167,23 @@ public class PlayerController : MonoBehaviour
                 break;
         }
         Destroy(other.gameObject);
+    }
+
+    public void Pause()
+    {
+        if(isPause)
+            {
+                pauseCanvas.SetActive(false);
+                isPause = false;
+                mainCanvas.SetActive(true);
+                Time.timeScale = 1f;
+            } else
+            {
+                pauseCanvas.SetActive(true);
+                isPause = true;
+                mainCanvas.SetActive(false);
+                Time.timeScale = 0f; 
+            }
     }
 
 }
